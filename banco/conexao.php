@@ -3,5 +3,5 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('BANCO', 'hostinformatic05');
+define('BANCO', 'gestor');
 

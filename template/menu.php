@@ -13,8 +13,9 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li <?php echo active($get); ?>><a href="index.php">Home</a></li>
-                <li <?php echo active($get, 'clientes'); ?>><a href="?pagina=clientes">Clientes</a></li>
-                <li <?php echo active($get, 'licencas'); ?>><a href="?pagina=licencas">Licencas</a></li>
+                <!-- <li <?php echo active($get, 'clientes'); ?>><a href="?pagina=clientes">Clientes</a></li> -->
+                <li <?php echo active($get, 'pedido'); ?>><a href="?pagina=pedido">Pedido</a></li>
+                <!-- <li <?php echo active($get, 'licencas'); ?>><a href="?pagina=licencas">Licencas</a></li> -->
                 <li <?php echo active($get, 'relatorio'); ?>><a href="?pagina=relatorio">Relatório</a></li>
             </ul>
         </div><!--/.nav-collapse -->

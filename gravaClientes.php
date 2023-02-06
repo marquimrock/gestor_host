@@ -2,7 +2,7 @@
 
 require 'banco/conexao.php';
 require 'lib/funcs.php';
-
+/*
 //função trim limpa os espaços excessivos...
 $cnpj = formataCNPJ($_POST['cnpj']);
 $razao_social = trim($_POST['razao_social']);
@@ -22,6 +22,7 @@ if ($erro > 0) {
     header('Location: index.php?pagina=clientes&erro=1');
     exit;
 }
+*/
 
 $con = conecta();
 
