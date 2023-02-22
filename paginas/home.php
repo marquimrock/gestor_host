@@ -1,8 +1,8 @@
 <div class="page-header">
-    <h3>Gerenciador de licenças</h3>
+    <h3 align="center">Gerenciador de Pedidos</h3>
 </div>
 
 <p>
-    Conteúdo... Conteúdo... Conteúdo... Conteúdo... Conteúdo... 
+   
 </p>
 

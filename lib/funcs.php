@@ -2,11 +2,14 @@
 
 function rotas($pagina) {
     switch ($pagina) {
+        case 'login':
+            require 'paginas/login.php';
+            break;
         case 'clientes':
             require 'paginas/clientes.php';
             break;
-        case 'teste':
-            require 'paginas/teste.php';
+        case 'produtos':
+            require 'paginas/produtos.php';
             break;
         case 'pedido':
             require 'paginas/pedido.php';
@@ -16,6 +19,9 @@ function rotas($pagina) {
             break;
         case 'relatorio':
             require 'paginas/relatorio.php';
+            break;
+        case 'teste':
+            require 'paginas/teste.php';
             break;
         default:
             require 'paginas/home.php';
@@ -43,5 +49,7 @@ function formataCNPJ($valor) {
     $valor = str_replace(",", "", $valor);
     $valor = str_replace("-", "", $valor);
     $valor = str_replace("/", "", $valor);
+    $valor = str_replace("(", "", $valor);
+    $valor = str_replace(")", "", $valor);
     return $valor;
 }

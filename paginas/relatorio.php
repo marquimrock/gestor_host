@@ -1,9 +1,8 @@
 <?php
 $con = conecta();
-
 $res = mysqli_query($con, 'SELECT * FROM pedido');
+$total_venda = 0;
 ?>
-
 <div class="page-header">
     <h3></h3>
 </div>
@@ -29,33 +28,35 @@ $res = mysqli_query($con, 'SELECT * FROM pedido');
             </thead>
             <tbody>
                 <?php  while ($ped = mysqli_fetch_assoc($res)):  ?>
-                
-                <tr>
-                    <td><?php  echo $ped['id'];  ?></td>
-                    <td><?php  echo $ped['descricao']; ?></td>
-                    <td><?php  echo $ped['quantidade']; ?></td>
-                    <td><?php  echo $ped['preco_compra']; ?></td>    
-                    <td><?php  echo $ped['preco_venda']; ?></td> 
-                    <td><?php  echo $ped['margem']; ?></td> 
-                </tr>
 
-                <?php  endwhile;  ?>
+                    <tr>
+                        <td><?php  echo $ped['id'];  ?></td>
+                        <td><?php  echo $ped['descricao']; ?></td>
+                        <td><?php  echo $ped['quantidade']; ?></td>
+                        <td><?php  echo $ped['preco_compra']; ?></td>    
+                        <td><?php  echo $ped['preco_un_venda_1']; ?></td> 
+                        <td><?php  echo $ped['margem']; ?></td> 
+                    </tr>
+
+                <?php  
+                $total_venda = $total_venda + $ped['preco_compra'];
+            endwhile;  ?>
             </tbody>
         </table>
         <div class="panel-heading">            
             <div class="pull-center">
                 <table class="table">
-            <thead>
-                <tr>
-                    <th><h3 class="panel-title" ><b>Totais</b></h3></th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                </tr>
-            </thead>
-        </table>
+                    <thead>
+                        <tr>
+                            <th><h3 class="panel-title" ><b>Totais</b></h3></th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th><?php echo $total_venda ?></th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </div>
     </div>
