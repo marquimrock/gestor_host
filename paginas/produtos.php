@@ -1,5 +1,4 @@
-
-    <div class="panel-heading"> 
+<div class="panel-heading"> 
     <h1></h1>                   
 </div>
 

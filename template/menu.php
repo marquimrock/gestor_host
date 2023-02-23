@@ -12,12 +12,12 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li <?php echo active($get); ?>><a href="index.php">Home</a></li>
-                <li <?php echo active($get, 'clientes'); ?>><a href="?pagina=clientes">Clientes</a></li>
-                <li <?php echo active($get, 'produtros'); ?>><a href="?pagina=produtos">Produtos</a></li>
-                <li <?php echo active($get, 'pedido'); ?>><a href="?pagina=pedido">Pedido</a></li>
+                <li <?php echo active($get); ?>><a href="index.php" class="bi bi-house"> Home</a></li>
+                <li <?php echo active($get, 'clientes'); ?> ><a href="?pagina=clientes" class="bi bi-person"> Clientes</a></li>
+                <li <?php echo active($get, 'produtros'); ?>><a href="?pagina=produtos" class="bi bi-upc"> Produtos</a></li>
+                <li <?php echo active($get, 'pedido'); ?> ><a href="?pagina=pedido" class="bi bi-stickies"> Pedido</a></li>
                 <!-- <li <?php echo active($get, 'licencas'); ?>><a href="?pagina=licencas">Licencas</a></li> -->
-                <li <?php echo active($get, 'relatorio'); ?>><a href="?pagina=relatorio">Relatório</a></li>
+                <li <?php echo active($get, 'relatorio'); ?>><a href="?pagina=relatorio" class="bi bi-receipt-cutoff"> Relatório</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

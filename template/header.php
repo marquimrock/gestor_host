@@ -10,6 +10,7 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
         <!-- Navbar Fixed -->
         <link href="css/navbar-fixed.css" rel="stylesheet">
