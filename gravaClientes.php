@@ -16,8 +16,9 @@ $email = trim($_POST['email']);
 
 //falta validar os campos nome fantasia, telefone e email
 $erro = 0;
-/*
+
 if(strlen($cnpj) < 14 || !is_numeric($cnpj)) $erro++;
+/*
 if(strlen($razao_social) < 3) $erro++;
 if(strlen($qnt_pdv) == 0 || !is_numeric($qnt_pdv)) $erro++;
 */
